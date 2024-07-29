@@ -30,7 +30,7 @@ async function main() {
   const contractFactory = await ethers.getContractFactory('TestToken')
   const contract = contractFactory.attach(contractAddress)
 
-  const functionName = 'mint1000tokens'
+  const functionName = 'minttokens'
   const setMessageTx = await sendShieldedTransaction(
     //@ts-ignore
     signer,
